@@ -37,11 +37,19 @@ Viewer::Viewer(int width, int height)
         glfwTerminate();
     }
 
+    //initialize the last mouse positions (the center of the screen)
+    lastX = width/2;
+    lastY = height/2;
+
     // Set user pointer for GLFW window to this Viewer instance
     glfwSetWindowUserPointer(win, this);
 
+    //tell GLFW that it should hide the cursor and capture it
+    glfwSetInputMode(win, GLFW_CURSOR, GLFW_CURSOR_DISABLED); 
+
     // register event handlers
     glfwSetKeyCallback(win, key_callback_static);
+    glfwSetCursorPosCallback(win, mouse_callback_static); 
 
     // useful message to check OpenGL renderer characteristics
     std::cout << glGetString(GL_VERSION) << ", GLSL "
@@ -119,4 +127,43 @@ void Viewer::on_key(int key)
         cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
     if (glfwGetKey(win, GLFW_KEY_RIGHT) == GLFW_PRESS)
         cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+}
+
+void Viewer::mouse_callback_static(GLFWwindow* window, double xpos, double ypos)
+{
+    Viewer* viewer = static_cast<Viewer*>(glfwGetWindowUserPointer(window));
+    viewer->on_mouse(xpos, ypos);
+}
+
+void Viewer::on_mouse(double xpos, double ypos)
+{
+    if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+  
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; 
+    lastX = xpos;
+    lastY = ypos;
+
+    float sensitivity = 0.1f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    yaw   += xoffset;
+    pitch += yoffset;
+
+    if(pitch > 89.0f)
+        pitch = 89.0f;
+    if(pitch < -89.0f)
+        pitch = -89.0f;
+
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    direction.y = sin(glm::radians(pitch));
+    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(direction);
 }
