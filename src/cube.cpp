@@ -20,19 +20,24 @@ Cube::Cube(Shader *shader_program) : Shape(shader_program)
         // base
         0, 1, 2,
         2, 3, 0,
-        // sides
+
+        //left
         0, 4, 7,
         7, 3, 0,
 
+        //front
         0, 1, 5,
-        5, 1, 4,
+        5, 0, 4,
 
+        //top
         4, 7, 6,
         6, 4, 5,
 
+        //right
         5, 6, 1,
         1, 2, 6,
 
+        //back
         6, 2, 7,
         7, 3, 2,
     };
