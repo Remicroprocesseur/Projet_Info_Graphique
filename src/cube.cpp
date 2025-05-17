@@ -25,7 +25,7 @@ Cube::Cube(Shader *shader_program) : Shape(shader_program)
         0, 4, 7,
         7, 3, 0,
 
-        //front
+        //back
         0, 1, 5,
         5, 0, 4,
 
@@ -37,7 +37,7 @@ Cube::Cube(Shader *shader_program) : Shape(shader_program)
         5, 6, 1,
         1, 2, 6,
 
-        //back
+        //front
         6, 2, 7,
         7, 3, 2,
     };
