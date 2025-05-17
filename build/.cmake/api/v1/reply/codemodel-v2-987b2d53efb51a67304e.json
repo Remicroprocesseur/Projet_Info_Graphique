@@ -169,28 +169,28 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "glfw::@ca12bac854c2ac6b2230",
-					"jsonFile" : "target-glfw-Debug-36b5a0c253b82636c0cc.json",
+					"jsonFile" : "target-glfw-Debug-1f89b184fb3da23c1fef.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "libglew_shared::@fc7cbd6ba58880f755cb",
-					"jsonFile" : "target-libglew_shared-Debug-b33177188eb0ccabf609.json",
+					"jsonFile" : "target-libglew_shared-Debug-9d3dda7ceb7ea76962fb.json",
 					"name" : "libglew_shared",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "libglew_static::@fc7cbd6ba58880f755cb",
-					"jsonFile" : "target-libglew_static-Debug-75f9522b9cfed46d97b0.json",
+					"jsonFile" : "target-libglew_static-Debug-6ef712e806b8dc799edf.json",
 					"name" : "libglew_static",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "opengl_program::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-opengl_program-Debug-5b72b3f591f3badb8418.json",
+					"jsonFile" : "target-opengl_program-Debug-1c68e168f079b41a292b.json",
 					"name" : "opengl_program",
 					"projectIndex" : 0
 				},
@@ -214,8 +214,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/build",
-		"source" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material"
+		"build" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build",
+		"source" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom"
 	},
 	"version" : 
 	{

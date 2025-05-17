@@ -1,6 +1,6 @@
 external/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.obj: \
- C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique\ graphique\TP4_material\external\glew-cmake\src\glew.c \
- C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/external/glew-cmake/include/GL/glew.h \
+ C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique\ graphique\backroom\external\glew-cmake\src\glew.c \
+ C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/external/glew-cmake/include/GL/glew.h \
  C:/msys64/mingw64/include/inttypes.h C:/msys64/mingw64/include/crtdefs.h \
  C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
  C:/msys64/mingw64/include/_mingw_mac.h \
@@ -11,7 +11,7 @@ external/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.obj: \
  C:/msys64/mingw64/include/stdint.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stddef.h \
  C:/msys64/mingw64/include/stddef.h \
- C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/external/glew-cmake/include/GL/wglew.h \
+ C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/external/glew-cmake/include/GL/wglew.h \
  C:/msys64/mingw64/include/windows.h \
  C:/msys64/mingw64/include/sdkddkver.h C:/msys64/mingw64/include/excpt.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \

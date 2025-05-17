@@ -152,11 +152,11 @@
 			[
 				{
 					"backtrace" : 5,
-					"define" : "SHADER_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/shaders/\""
+					"define" : "SHADER_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/shaders/\""
 				},
 				{
 					"backtrace" : 6,
-					"define" : "TEXTURE_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/textures/\""
+					"define" : "TEXTURE_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/textures/\""
 				},
 				{
 					"backtrace" : 7,
@@ -179,27 +179,27 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/include"
+					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/external/glew-cmake/include"
+					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 12,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/external/glfw/include"
+					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glfw/include"
 				},
 				{
 					"backtrace" : 13,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/external/glm"
+					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glm"
 				},
 				{
 					"backtrace" : 14,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/external/glfw/src"
+					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glfw/src"
 				},
 				{
 					"backtrace" : 14,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/build/external/glfw/src"
+					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glfw/src"
 				}
 			],
 			"language" : "C",

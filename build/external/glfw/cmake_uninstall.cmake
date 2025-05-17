@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/build/external/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/build/external/glfw/install_manifest.txt\"")
+if (NOT EXISTS "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/TP4_material/build/external/glfw/install_manifest.txt" files)
+file(READ "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -1,7 +1,7 @@
 CMakeFiles/opengl_program.dir/src/texture.cpp.obj: \
- C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique\ graphique\TP4_material\src\texture.cpp \
- C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/include/texture.h \
- C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/external/glew-cmake/include/GL/glew.h \
+ C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique\ graphique\backroom\src\texture.cpp \
+ C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/include/texture.h \
+ C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/external/glew-cmake/include/GL/glew.h \
  C:/msys64/mingw64/include/inttypes.h C:/msys64/mingw64/include/crtdefs.h \
  C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
  C:/msys64/mingw64/include/_mingw_mac.h \
@@ -174,8 +174,8 @@ CMakeFiles/opengl_program.dir/src/texture.cpp.obj: \
  C:/msys64/mingw64/include/c++/12.2.0/bits/stl_heap.h \
  C:/msys64/mingw64/include/c++/12.2.0/bits/uniform_int_dist.h \
  C:/msys64/mingw64/include/c++/12.2.0/pstl/glue_algorithm_defs.h \
- C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/external/glfw/include/GLFW/glfw3.h \
- C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/include/stb_image.h \
+ C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/external/glfw/include/GLFW/glfw3.h \
+ C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/include/stb_image.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
  C:/msys64/mingw64/include/_mingw_stdarg.h \

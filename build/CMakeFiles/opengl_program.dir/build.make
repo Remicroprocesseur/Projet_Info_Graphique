@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material"
+CMAKE_SOURCE_DIR = "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build"
+CMAKE_BINARY_DIR = "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opengl_program.dir/depend.make
@@ -73,198 +73,198 @@ CMakeFiles/opengl_program.dir/codegen:
 
 CMakeFiles/opengl_program.dir/src/main.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/main.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/main.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/main.cpp
+CMakeFiles/opengl_program.dir/src/main.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/main.cpp
 CMakeFiles/opengl_program.dir/src/main.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_program.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/main.cpp.obj -MF CMakeFiles\opengl_program.dir\src\main.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\main.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_program.dir/src/main.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/main.cpp.obj -MF CMakeFiles\opengl_program.dir\src\main.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\main.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\main.cpp"
 
 CMakeFiles/opengl_program.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\main.cpp" > CMakeFiles\opengl_program.dir\src\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\main.cpp" > CMakeFiles\opengl_program.dir\src\main.cpp.i
 
 CMakeFiles/opengl_program.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\main.cpp" -o CMakeFiles\opengl_program.dir\src\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\main.cpp" -o CMakeFiles\opengl_program.dir\src\main.cpp.s
 
 CMakeFiles/opengl_program.dir/src/node.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/node.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/node.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/node.cpp
+CMakeFiles/opengl_program.dir/src/node.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/node.cpp
 CMakeFiles/opengl_program.dir/src/node.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl_program.dir/src/node.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/node.cpp.obj -MF CMakeFiles\opengl_program.dir\src\node.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\node.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\node.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl_program.dir/src/node.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/node.cpp.obj -MF CMakeFiles\opengl_program.dir\src\node.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\node.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\node.cpp"
 
 CMakeFiles/opengl_program.dir/src/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/node.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\node.cpp" > CMakeFiles\opengl_program.dir\src\node.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\node.cpp" > CMakeFiles\opengl_program.dir\src\node.cpp.i
 
 CMakeFiles/opengl_program.dir/src/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/node.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\node.cpp" -o CMakeFiles\opengl_program.dir\src\node.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\node.cpp" -o CMakeFiles\opengl_program.dir\src\node.cpp.s
 
 CMakeFiles/opengl_program.dir/src/shape.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/shape.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/shape.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/shape.cpp
+CMakeFiles/opengl_program.dir/src/shape.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/shape.cpp
 CMakeFiles/opengl_program.dir/src/shape.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl_program.dir/src/shape.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/shape.cpp.obj -MF CMakeFiles\opengl_program.dir\src\shape.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\shape.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\shape.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl_program.dir/src/shape.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/shape.cpp.obj -MF CMakeFiles\opengl_program.dir\src\shape.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\shape.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\shape.cpp"
 
 CMakeFiles/opengl_program.dir/src/shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/shape.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\shape.cpp" > CMakeFiles\opengl_program.dir\src\shape.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\shape.cpp" > CMakeFiles\opengl_program.dir\src\shape.cpp.i
 
 CMakeFiles/opengl_program.dir/src/shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/shape.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\shape.cpp" -o CMakeFiles\opengl_program.dir\src\shape.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\shape.cpp" -o CMakeFiles\opengl_program.dir\src\shape.cpp.s
 
 CMakeFiles/opengl_program.dir/src/shader.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/shader.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/shader.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/shader.cpp
+CMakeFiles/opengl_program.dir/src/shader.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/shader.cpp
 CMakeFiles/opengl_program.dir/src/shader.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl_program.dir/src/shader.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/shader.cpp.obj -MF CMakeFiles\opengl_program.dir\src\shader.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\shader.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\shader.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl_program.dir/src/shader.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/shader.cpp.obj -MF CMakeFiles\opengl_program.dir\src\shader.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\shader.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\shader.cpp"
 
 CMakeFiles/opengl_program.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/shader.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\shader.cpp" > CMakeFiles\opengl_program.dir\src\shader.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\shader.cpp" > CMakeFiles\opengl_program.dir\src\shader.cpp.i
 
 CMakeFiles/opengl_program.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/shader.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\shader.cpp" -o CMakeFiles\opengl_program.dir\src\shader.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\shader.cpp" -o CMakeFiles\opengl_program.dir\src\shader.cpp.s
 
 CMakeFiles/opengl_program.dir/src/viewer.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/viewer.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/viewer.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/viewer.cpp
+CMakeFiles/opengl_program.dir/src/viewer.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/viewer.cpp
 CMakeFiles/opengl_program.dir/src/viewer.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opengl_program.dir/src/viewer.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/viewer.cpp.obj -MF CMakeFiles\opengl_program.dir\src\viewer.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\viewer.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\viewer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/opengl_program.dir/src/viewer.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/viewer.cpp.obj -MF CMakeFiles\opengl_program.dir\src\viewer.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\viewer.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\viewer.cpp"
 
 CMakeFiles/opengl_program.dir/src/viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/viewer.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\viewer.cpp" > CMakeFiles\opengl_program.dir\src\viewer.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\viewer.cpp" > CMakeFiles\opengl_program.dir\src\viewer.cpp.i
 
 CMakeFiles/opengl_program.dir/src/viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/viewer.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\viewer.cpp" -o CMakeFiles\opengl_program.dir\src\viewer.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\viewer.cpp" -o CMakeFiles\opengl_program.dir\src\viewer.cpp.s
 
 CMakeFiles/opengl_program.dir/src/triangle.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/triangle.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/triangle.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/triangle.cpp
+CMakeFiles/opengl_program.dir/src/triangle.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/triangle.cpp
 CMakeFiles/opengl_program.dir/src/triangle.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opengl_program.dir/src/triangle.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/triangle.cpp.obj -MF CMakeFiles\opengl_program.dir\src\triangle.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\triangle.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\triangle.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/opengl_program.dir/src/triangle.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/triangle.cpp.obj -MF CMakeFiles\opengl_program.dir\src\triangle.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\triangle.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\triangle.cpp"
 
 CMakeFiles/opengl_program.dir/src/triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/triangle.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\triangle.cpp" > CMakeFiles\opengl_program.dir\src\triangle.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\triangle.cpp" > CMakeFiles\opengl_program.dir\src\triangle.cpp.i
 
 CMakeFiles/opengl_program.dir/src/triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/triangle.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\triangle.cpp" -o CMakeFiles\opengl_program.dir\src\triangle.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\triangle.cpp" -o CMakeFiles\opengl_program.dir\src\triangle.cpp.s
 
 CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/pyramid.cpp
+CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/pyramid.cpp
 CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj -MF CMakeFiles\opengl_program.dir\src\pyramid.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\pyramid.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\pyramid.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/pyramid.cpp.obj -MF CMakeFiles\opengl_program.dir\src\pyramid.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\pyramid.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\pyramid.cpp"
 
 CMakeFiles/opengl_program.dir/src/pyramid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/pyramid.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\pyramid.cpp" > CMakeFiles\opengl_program.dir\src\pyramid.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\pyramid.cpp" > CMakeFiles\opengl_program.dir\src\pyramid.cpp.i
 
 CMakeFiles/opengl_program.dir/src/pyramid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/pyramid.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\pyramid.cpp" -o CMakeFiles\opengl_program.dir\src\pyramid.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\pyramid.cpp" -o CMakeFiles\opengl_program.dir\src\pyramid.cpp.s
 
 CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/cylinder.cpp
+CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/cylinder.cpp
 CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj -MF CMakeFiles\opengl_program.dir\src\cylinder.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\cylinder.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\cylinder.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/cylinder.cpp.obj -MF CMakeFiles\opengl_program.dir\src\cylinder.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\cylinder.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\cylinder.cpp"
 
 CMakeFiles/opengl_program.dir/src/cylinder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/cylinder.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\cylinder.cpp" > CMakeFiles\opengl_program.dir\src\cylinder.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\cylinder.cpp" > CMakeFiles\opengl_program.dir\src\cylinder.cpp.i
 
 CMakeFiles/opengl_program.dir/src/cylinder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/cylinder.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\cylinder.cpp" -o CMakeFiles\opengl_program.dir\src\cylinder.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\cylinder.cpp" -o CMakeFiles\opengl_program.dir\src\cylinder.cpp.s
 
 CMakeFiles/opengl_program.dir/src/sphere.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/sphere.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/sphere.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/sphere.cpp
+CMakeFiles/opengl_program.dir/src/sphere.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/sphere.cpp
 CMakeFiles/opengl_program.dir/src/sphere.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opengl_program.dir/src/sphere.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/sphere.cpp.obj -MF CMakeFiles\opengl_program.dir\src\sphere.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\sphere.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\sphere.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/opengl_program.dir/src/sphere.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/sphere.cpp.obj -MF CMakeFiles\opengl_program.dir\src\sphere.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\sphere.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\sphere.cpp"
 
 CMakeFiles/opengl_program.dir/src/sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/sphere.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\sphere.cpp" > CMakeFiles\opengl_program.dir\src\sphere.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\sphere.cpp" > CMakeFiles\opengl_program.dir\src\sphere.cpp.i
 
 CMakeFiles/opengl_program.dir/src/sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/sphere.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\sphere.cpp" -o CMakeFiles\opengl_program.dir\src\sphere.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\sphere.cpp" -o CMakeFiles\opengl_program.dir\src\sphere.cpp.s
 
 CMakeFiles/opengl_program.dir/src/texture.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/texture.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/texture.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/texture.cpp
+CMakeFiles/opengl_program.dir/src/texture.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/texture.cpp
 CMakeFiles/opengl_program.dir/src/texture.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opengl_program.dir/src/texture.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/texture.cpp.obj -MF CMakeFiles\opengl_program.dir\src\texture.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\texture.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\texture.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/opengl_program.dir/src/texture.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/texture.cpp.obj -MF CMakeFiles\opengl_program.dir\src\texture.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\texture.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\texture.cpp"
 
 CMakeFiles/opengl_program.dir/src/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/texture.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\texture.cpp" > CMakeFiles\opengl_program.dir\src\texture.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\texture.cpp" > CMakeFiles\opengl_program.dir\src\texture.cpp.i
 
 CMakeFiles/opengl_program.dir/src/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/texture.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\texture.cpp" -o CMakeFiles\opengl_program.dir\src\texture.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\texture.cpp" -o CMakeFiles\opengl_program.dir\src\texture.cpp.s
 
 CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/textured_sphere.cpp
+CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/textured_sphere.cpp
 CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj -MF CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\textured_sphere.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.obj -MF CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\textured_sphere.cpp"
 
 CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\textured_sphere.cpp" > CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\textured_sphere.cpp" > CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.i
 
 CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/textured_sphere.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\textured_sphere.cpp" -o CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\textured_sphere.cpp" -o CMakeFiles\opengl_program.dir\src\textured_sphere.cpp.s
 
 CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/lighting_sphere.cpp
+CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/lighting_sphere.cpp
 CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj -MF CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\lighting_sphere.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.obj -MF CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\lighting_sphere.cpp"
 
 CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\lighting_sphere.cpp" > CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\lighting_sphere.cpp" > CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.i
 
 CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/lighting_sphere.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\lighting_sphere.cpp" -o CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\lighting_sphere.cpp" -o CMakeFiles\opengl_program.dir\src\lighting_sphere.cpp.s
 
 CMakeFiles/opengl_program.dir/src/cube.cpp.obj: CMakeFiles/opengl_program.dir/flags.make
 CMakeFiles/opengl_program.dir/src/cube.cpp.obj: CMakeFiles/opengl_program.dir/includes_CXX.rsp
-CMakeFiles/opengl_program.dir/src/cube.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/TP4_material/src/cube.cpp
+CMakeFiles/opengl_program.dir/src/cube.cpp.obj: C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique\ graphique/backroom/src/cube.cpp
 CMakeFiles/opengl_program.dir/src/cube.cpp.obj: CMakeFiles/opengl_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opengl_program.dir/src/cube.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/cube.cpp.obj -MF CMakeFiles\opengl_program.dir\src\cube.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\cube.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\cube.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/opengl_program.dir/src/cube.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/opengl_program.dir/src/cube.cpp.obj -MF CMakeFiles\opengl_program.dir\src\cube.cpp.obj.d -o CMakeFiles\opengl_program.dir\src\cube.cpp.obj -c "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\cube.cpp"
 
 CMakeFiles/opengl_program.dir/src/cube.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/opengl_program.dir/src/cube.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\cube.cpp" > CMakeFiles\opengl_program.dir\src\cube.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\cube.cpp" > CMakeFiles\opengl_program.dir\src\cube.cpp.i
 
 CMakeFiles/opengl_program.dir/src/cube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/opengl_program.dir/src/cube.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\src\cube.cpp" -o CMakeFiles\opengl_program.dir\src\cube.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\src\cube.cpp" -o CMakeFiles\opengl_program.dir\src\cube.cpp.s
 
 # Object files for target opengl_program
 opengl_program_OBJECTS = \
@@ -304,7 +304,7 @@ opengl_program.exe: external/glfw/src/libglfw3.a
 opengl_program.exe: CMakeFiles/opengl_program.dir/linkLibs.rsp
 opengl_program.exe: CMakeFiles/opengl_program.dir/objects1.rsp
 opengl_program.exe: CMakeFiles/opengl_program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable opengl_program.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable opengl_program.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\opengl_program.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -316,6 +316,6 @@ CMakeFiles/opengl_program.dir/clean:
 .PHONY : CMakeFiles/opengl_program.dir/clean
 
 CMakeFiles/opengl_program.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\TP4_material\build\CMakeFiles\opengl_program.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build" "C:\Users\ambre\OneDrive\Documents\etudeSup\ET3IIM\informatique graphique\backroom\build\CMakeFiles\opengl_program.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/opengl_program.dir/depend
 
