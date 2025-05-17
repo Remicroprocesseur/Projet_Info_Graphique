@@ -3,7 +3,6 @@
 
 Cube::Cube(Shader *shader_program) : Shape(shader_program) 
 {
-    // Pyramid vertex positions
     GLfloat vertex_buffer_data[] = {
         // base
         -0.5f, -0.5f, -0.5f,
@@ -16,8 +15,7 @@ Cube::Cube(Shader *shader_program) : Shape(shader_program)
         0.5f, 0.5f,  0.5f,
        -0.5f, 0.5f,  0.5f,
     };
-
-    // Pyramid indices
+    
     GLint indices[] = {
         // base
         0, 1, 2,
