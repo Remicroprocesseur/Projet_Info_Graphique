@@ -4,7 +4,7 @@
 #include "texture.h"
 #include "node.h"
 #include "shader.h"
-#include "cube.h"
+#include "textured_cube.h"
 #include <string>
 
 #ifndef SHADER_DIR
@@ -29,6 +29,21 @@ int main()
     Shader *texture_shader = new Shader(shader_dir + "texture.vert", shader_dir + "texture.frag");
 
     Texture *texture = new Texture(texture_dir + "texture1.png");
+
+    Shape* cube1 = new TexturedCube(texture_shader, texture);
+    glm::mat4 cube1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
+        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
+        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
+    Node* cube1_node = new Node(cube1_mat);
+
+    cube1_node->add(cube1);
+
+    viewer.scene_root->add(cube1_node);
+
+
+
+
     Shape* sphere1 = new TexturedSphere(texture_shader, texture);
     glm::mat4 sphere1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
@@ -63,7 +78,7 @@ int main()
     cube_node->add(cube);
 
     //viewer.scene_root->add(sphere2_node);
-    viewer.scene_root->add(cube_node);
+    //viewer.scene_root->add(cube_node);
 
     viewer.run();
 }
