@@ -28,6 +28,7 @@ set(SOURCES
     ${SRC_DIR}/cylinder.cpp
     ${SRC_DIR}/sphere.cpp
     ${SRC_DIR}/texture.cpp
+    ${SRC_DIR}/textured_cube.cpp
     ${SRC_DIR}/textured_sphere.cpp
     ${SRC_DIR}/lighting_sphere.cpp
     ${SRC_DIR}/cube.cpp

@@ -1,9 +1,12 @@
 #version 330 core
 
-uniform sampler2D diffuse_map;
-in vec2 frag_tex_coords;
-out vec4 out_color;
+in vec2 TexCoord;  // Reçu du vertex shader
 
-void main() {
-    out_color = texture(diffuse_map, frag_tex_coords);
+uniform sampler2D diffuse_map;
+
+out vec4 FragColor;
+
+void main()
+{
+    FragColor = texture(diffuse_map, TexCoord);
 }

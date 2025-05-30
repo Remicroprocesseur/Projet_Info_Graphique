@@ -5,10 +5,9 @@
 #include "glm/ext.hpp"
 #include <glm/gtc/matrix_transform.hpp>
 
-
 Viewer::Viewer(int width, int height)
 {
-    if (!glfwInit())    // initialize window system glfw
+    if (!glfwInit()) // initialize window system glfw
     {
         std::cerr << "Failed to initialize GLFW" << std::endl;
         glfwTerminate();
@@ -20,10 +19,11 @@ Viewer::Viewer(int width, int height)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-    
+
     win = glfwCreateWindow(width, height, "Viewer", NULL, NULL);
 
-    if (win == NULL) {
+    if (win == NULL)
+    {
         std::cerr << "Failed to create window" << std::endl;
         glfwTerminate();
     }
@@ -37,11 +37,19 @@ Viewer::Viewer(int width, int height)
         glfwTerminate();
     }
 
+    // initialize the last mouse positions (the center of the screen)
+    lastX = width / 2;
+    lastY = height / 2;
+
     // Set user pointer for GLFW window to this Viewer instance
     glfwSetWindowUserPointer(win, this);
 
+    // tell GLFW that it should hide the cursor and capture it
+    glfwSetInputMode(win, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
     // register event handlers
     glfwSetKeyCallback(win, key_callback_static);
+    glfwSetCursorPosCallback(win, mouse_callback_static);
 
     // useful message to check OpenGL renderer characteristics
     std::cout << glGetString(GL_VERSION) << ", GLSL "
@@ -53,9 +61,9 @@ Viewer::Viewer(int width, int height)
 
     /* tell GL to only draw onto a pixel if the shape is closer to the viewer
     than anything already drawn at that pixel */
-    glEnable( GL_DEPTH_TEST ); /* enable depth-testing */
+    glEnable(GL_DEPTH_TEST); /* enable depth-testing */
     /* with LESS depth-testing interprets a smaller depth value as meaning "closer" */
-    glDepthFunc( GL_LESS );
+    glDepthFunc(GL_LESS);
 
     // initialize our scene_root
     scene_root = new Node();
@@ -67,7 +75,7 @@ void Viewer::run()
     // Main render loop for this OpenGL window
     while (!glfwWindowShouldClose(win))
     {
-    
+
         // clear draw buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -78,11 +86,9 @@ void Viewer::run()
         glm::mat4 sca_mat = glm::mat4(1.0f);
         glm::mat4 view = tra_mat * rot_mat * sca_mat;*/
 
-
         glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), 1.0f, 0.1f, 10.0f);
-
 
         scene_root->draw(model, view, projection);
 
@@ -97,9 +103,9 @@ void Viewer::run()
     glfwTerminate();
 }
 
-void Viewer::key_callback_static(GLFWwindow* window, int key, int scancode, int action, int mods)
+void Viewer::key_callback_static(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
-    Viewer* viewer = static_cast<Viewer*>(glfwGetWindowUserPointer(window));
+    Viewer *viewer = static_cast<Viewer *>(glfwGetWindowUserPointer(window));
     viewer->on_key(key);
 }
 
@@ -119,4 +125,43 @@ void Viewer::on_key(int key)
         cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
     if (glfwGetKey(win, GLFW_KEY_RIGHT) == GLFW_PRESS)
         cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+}
+
+void Viewer::mouse_callback_static(GLFWwindow *window, double xpos, double ypos)
+{
+    Viewer *viewer = static_cast<Viewer *>(glfwGetWindowUserPointer(window));
+    viewer->on_mouse(xpos, ypos);
+}
+
+void Viewer::on_mouse(double xpos, double ypos)
+{
+    if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos;
+    lastX = xpos;
+    lastY = ypos;
+
+    float sensitivity = 0.1f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    yaw += xoffset;
+    pitch += yoffset;
+
+    if (pitch > 89.0f)
+        pitch = 89.0f;
+    if (pitch < -89.0f)
+        pitch = -89.0f;
+
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    direction.y = sin(glm::radians(pitch));
+    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(direction);
 }

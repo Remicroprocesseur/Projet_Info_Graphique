@@ -6,6 +6,10 @@
 #include "shader.h"
 #include "textured_cube.h"
 #include <string>
+#include <iostream>
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
 
 #ifndef SHADER_DIR
 #error "SHADER_DIR not defined"
@@ -26,7 +30,7 @@ int main()
     // get texture directory
     std::string texture_dir = TEXTURE_DIR;
 
-    Shader *texture_shader = new Shader(shader_dir + "texture.vert", shader_dir + "texture.frag");
+    Shader* texture_shader = new Shader(shader_dir + "texture.vert", shader_dir + "texture.frag");
 
     Texture *texture = new Texture(texture_dir + "texture1.png");
 
@@ -40,7 +44,6 @@ int main()
     cube1_node->add(cube1);
 
     viewer.scene_root->add(cube1_node);
-
 
 
 
