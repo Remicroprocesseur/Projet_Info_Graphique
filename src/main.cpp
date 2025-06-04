@@ -35,7 +35,7 @@ int main()
 
     Shader* texture_shader = new Shader(shader_dir + "texture.vert", shader_dir + "texture.frag");
 
-    Texture *texture = new Texture(texture_dir + "Wood.jpg");
+    Texture *texture = new Texture(texture_dir + "texture1.png");
 
     Shape* cube1 = new TexturedCube(texture_shader, texture);
     glm::mat4 cube1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
@@ -46,34 +46,71 @@ int main()
 
     cube1_node->add(cube1);
 
-    //si jamais on veut repasser au placement manuel
-    /**Shape* cube2 = new TexturedCube(texture_shader, texture);
-    glm::mat4 cube2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.30f, 0.0f, 0.40f)) //A noté que le déplacement se fait en % de la taille de notre cube père
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.01f, 1.0f, 0.2f))
+    //placement manuel
+    glm::mat4 verical_wall_SR = glm::scale(glm::mat4(1.0f), glm::vec3(0.01f, 1.0f, 0.2f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    Node* cube2_node = new Node(cube2_mat);
 
-    cube2_node->add(cube2);
+    glm::mat4 horizontal_wall_SR =  glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 1.0f, 0.01f))
+        * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
-    Shape* cube3 = new TexturedCube(texture_shader, texture);
-    glm::mat4 cube3_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.205f, 0.0f, 0.30f)) //A noté que le déplacement se fait en % de la taille de notre cube père
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 1.0f, 0.01f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    Node* cube3_node = new Node(cube3_mat);
+    Shape* wall1 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.30f, 0.0f, 0.40f)) //A noté que le déplacement se fait en % de la taille totale de notre cube père (ici la taille est 30)
+        * verical_wall_SR;
+    Node* wall1_node = new Node(wall1_mat);
+
+    wall1_node->add(wall1);
+
+    Shape* wall2 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.205f, 0.0f, 0.295f)) //A noté que le déplacement se fait en % de la taille de notre cube père
+        * horizontal_wall_SR;
+    Node* wall2_node = new Node(wall2_mat);
     
-    cube3_node->add(cube3);
+    wall2_node->add(wall2);
 
-    Shape* cube4 = new TexturedCube(texture_shader, texture);
-    glm::mat4 cube4_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.110f, 0.0f, 0.20f)) // A noté que le déplacement se fait en % de la taille de notre cube père
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.01f, 1.0f, 0.2f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    Node* cube4_node = new Node(cube4_mat);
+    Shape* wall3 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall3_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.1f, 0.0f, 0.10f)) // A noté que le déplacement se fait en % de la taille de notre cube père
+        *glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 2.0f)) //On double la longueur du mur, à voir si ça fait bizarre
+        * verical_wall_SR;
+    Node* wall3_node = new Node(wall3_mat);
+
+    wall3_node->add(wall3);
+
+    Shape* wall4 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall4_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.1f, 0.0f, -0.40f)) // A noté que le déplacement se fait en % de la taille de notre cube père
+        * verical_wall_SR;
+    Node* wall4_node = new Node(wall4_mat);
     
-    cube4_node->add(cube4);
-    cube1_node->add(cube2_node);
-    cube1_node->add(cube3_node);
-    cube1_node->add(cube4_node);
-    **/
+    wall4_node->add(wall4);
+
+    Shape* wall5 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall5_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.095f, 0.0f, -0.295f)) // A noté que le déplacement se fait en % de la taille de notre cube père
+        *glm::scale(glm::mat4(1.0f), glm::vec3(2.0f, 1.0f, 1.0f)) //On double la longueur du mur, à voir si ça fait bizarre
+        * horizontal_wall_SR;
+    Node* wall5_node = new Node(wall5_mat);
+    
+    wall5_node->add(wall5);
+
+    Shape* wall6 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall6_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.4f, 0.0f, 0.295f)) // A noté que le déplacement se fait en % de la taille de notre cube père
+        * horizontal_wall_SR;
+    Node* wall6_node = new Node(wall6_mat);
+    
+    wall6_node->add(wall6);
+
+    Shape* wall7 = new TexturedCube(texture_shader, texture);
+    glm::mat4 wall7_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.295f, 0.0f, 0.2f)) // A noté que le déplacement se fait en % de la taille de notre cube père
+        * verical_wall_SR;
+    Node* wall7_node = new Node(wall7_mat);
+    
+    wall7_node->add(wall7);
+
+    cube1_node->add(wall1_node);
+    cube1_node->add(wall2_node);
+    cube1_node->add(wall3_node);
+    cube1_node->add(wall4_node);
+    cube1_node->add(wall5_node);
+    cube1_node->add(wall6_node);
+    cube1_node->add(wall7_node);
 
     //placement aléatoire
 
@@ -161,7 +198,7 @@ int main()
     cube1_node->add(cube3_node);
     cube1_node->add(cube4_node);
     cube1_node->add(cube5_node);
-    cube1_node->add(cube6_node);**/
+    cube1_node->add(cube6_node);
 
     //placement d'un nombre aléatoire de murs
 
@@ -216,7 +253,7 @@ int main()
         Node* cube_node = new Node(cube_mat);
         cube_node->add(cube);
         cube1_node->add(cube_node); 
-    }
+    }**/
     
     viewer.scene_root->add(cube1_node);
 
