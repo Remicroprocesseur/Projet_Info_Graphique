@@ -8,6 +8,8 @@
 #include <string>
 #include <iostream>
 #include <stdlib.h>
+#include "cylinder.h"
+#include "triangle.h"
 /**#include <assimp/Importer.hpp>
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
@@ -46,7 +48,7 @@ int main()
 
     cube1_node->add(cube1);
 
-    //placement manuel
+    //placement manuel des murs sur dans le premier cube
     glm::mat4 verical_wall_SR = glm::scale(glm::mat4(1.0f), glm::vec3(0.01f, 1.0f, 0.2f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
@@ -111,162 +113,9 @@ int main()
     cube1_node->add(wall5_node);
     cube1_node->add(wall6_node);
     cube1_node->add(wall7_node);
-
-    //placement aléatoire
-
-    //placement avec nombre d'élément prédéfini
-
-    /**Shape* cube2 = new TexturedCube(texture_shader, texture);
-    Shape* cube3 = new TexturedCube(texture_shader, texture);
-    Shape* cube4 = new TexturedCube(texture_shader, texture);
-    Shape* cube5 = new TexturedCube(texture_shader, texture);
-    Shape* cube6 = new TexturedCube(texture_shader, texture);
-
-    glm::mat4 taille_mur_couloir_vertical = glm::scale(glm::mat4(1.0f), glm::vec3(0.01f, 1.0f, 0.2f));
-    glm::mat4 taille_mur_couloir_horzontal = glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 1.0f, 0.01f));
-    glm::mat4 rot_mur_couloir = glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-
-    glm::mat4 cube2_mat = glm::mat4(1.0f);
-    glm::mat4 cube3_mat = glm::mat4(1.0f);
-    glm::mat4 cube4_mat = glm::mat4(1.0f);
-    glm::mat4 cube5_mat = glm::mat4(1.0f);
-    glm::mat4 cube6_mat = glm::mat4(1.0f);
-
-    srand(time(NULL));
-
-    glm::mat4 matrices[5] = {cube2_mat, cube3_mat, cube4_mat, cube5_mat, cube6_mat};
-
-    for(int i=0; i<5; i++)
-    {
-
-        float x = 10;
-        while(x>0.4)
-        {
-            x = ((double)rand()) / RAND_MAX;
-        }
-        int signe_x = rand()%2;
-        if(signe_x == 1)
-        {
-            x = -x;
-        }
-
-        float z = 10;
-        int signe_z = rand()%2;
-        while(z>0.4)
-        {
-            z = ((double)rand()) / RAND_MAX;
-        }
-
-        if(signe_z==1)
-        {
-            z = -z;
-        }
-
-        int decision = rand()%2;
-        if(decision == 0)
-        {
-            matrices[i] = matrices[i]
-                        * glm::translate(glm::mat4(1.0f), glm::vec3(x, 0.0f, z))
-                        * taille_mur_couloir_horzontal
-                        * rot_mur_couloir;
-        }
-        else
-        {
-            matrices[i] = matrices[i]
-                        * glm::translate(glm::mat4(1.0f), glm::vec3(x, 0.0f, z))
-                        * taille_mur_couloir_vertical
-                        * rot_mur_couloir;
-        }
-
-        
-        
-    }
-
-    Node* cube2_node = new Node(matrices[0]);
-    Node* cube3_node = new Node(matrices[1]);
-    Node* cube4_node = new Node(matrices[2]);
-    Node* cube5_node = new Node(matrices[3]);
-    Node* cube6_node = new Node(matrices[4]);
-
-    cube2_node->add(cube2);
-    cube3_node->add(cube3);
-    cube4_node->add(cube4);
-    cube5_node->add(cube5);
-    cube6_node->add(cube6);
-
-    cube1_node->add(cube2_node);
-    cube1_node->add(cube3_node);
-    cube1_node->add(cube4_node);
-    cube1_node->add(cube5_node);
-    cube1_node->add(cube6_node);
-
-    //placement d'un nombre aléatoire de murs
-
-    glm::mat4 taille_mur_couloir_vertical = glm::scale(glm::mat4(1.0f), glm::vec3(0.05f, 1.0f, 0.2f));
-    glm::mat4 taille_mur_couloir_horzontal = glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 1.0f, 0.02f));
-    glm::mat4 rot_mur_couloir = glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-
-    int nb_elements = rand()%7;
-    nb_elements += 4;
-    for(int i=0; i<nb_elements;i++)
-    {
-        glm::mat4 cube_mat = glm::mat4(1.0f);
-        float x = 10;
-        while(x>0.4)
-        {
-            x = ((double)rand()) / RAND_MAX;
-        }
-        int signe_x = rand()%2;
-        if(signe_x == 1)
-        {
-            x = -x;
-        }
-
-        float z = 10;
-        int signe_z = rand()%2;
-        while(z>0.4)
-        {
-            z = ((double)rand()) / RAND_MAX;
-        }
-
-        if(signe_z==1)
-        {
-            z = -z;
-        }
-
-        int decision = rand()%2;
-        if(decision == 0)
-        {
-            cube_mat = cube_mat
-                        * glm::translate(glm::mat4(1.0f), glm::vec3(x, 0.0f, z))
-                        * taille_mur_couloir_horzontal
-                        * rot_mur_couloir;
-        }
-        else
-        {
-            cube_mat = cube_mat
-                        * glm::translate(glm::mat4(1.0f), glm::vec3(x, 0.0f, z))
-                        * taille_mur_couloir_vertical
-                        * rot_mur_couloir;
-        }
-        Shape* cube = new TexturedCube(texture_shader, texture);
-        Node* cube_node = new Node(cube_mat);
-        cube_node->add(cube);
-        cube1_node->add(cube_node); 
-    }**/
     
     viewer.scene_root->add(cube1_node);
 
-
-
-    Shape* sphere1 = new TexturedSphere(texture_shader, texture);
-    glm::mat4 sphere1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-
-    Node* sphere1_node = new Node(sphere1_mat);
-
-    sphere1_node->add(sphere1);
 
     //viewer.scene_root->add(sphere1_node);
     
@@ -274,26 +123,168 @@ int main()
 
     Shader *color_shader = new Shader(shader_dir + "node.vert", shader_dir + "node.frag");
 
-    Shape* sphere2 = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    /**Shape* sphere2 = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
     glm::mat4 sphere2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     
-    Node* sphere2_node = new Node(sphere2_mat);
+    Node* sphere2_node = new Node(sphere2_mat);**/
 
-    Shape* cube = new Cube(color_shader);
+    //création du bonhomme à animer
+    glm::mat4 human_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, -4.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.9f, 0.9f, 0.9f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
-    glm::mat4 cube_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -4.0f))
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 0.1f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(20.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    Node *human = new Node(human_mat);
+    // human -> add(new Cylinder(color_shader,2.0f,0.5f,100));
 
-    Node* cube_node = new Node(cube_mat);
+    Shape *head = new Cylinder(color_shader);
 
-    sphere2_node->add(sphere2);
-    cube_node->add(cube);
+    glm::mat4 head_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 1.0f, 0.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.5f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
-    //viewer.scene_root->add(sphere2_node);
-    //viewer.scene_root->add(cube_node);
+    Node *head_node = new Node(head_mat);
+
+    head_node->add(head);
+
+    Shape *body = new Cylinder(color_shader);
+
+    glm::mat4 body_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.5f, 0.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(1.35f, 2.0f, 0.5f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    Node *body_node = new Node(body_mat);
+
+    body_node->add(body);
+
+    Shape *rightEye = new Cylinder(color_shader);
+
+    glm::mat4 rightEye_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.25f, 0.05f, 0.15f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 0.4f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
+    Node *rightEye_node = new Node(rightEye_mat);
+
+    rightEye_node->add(rightEye);
+
+    Shape *leftEye = new Cylinder(color_shader);
+
+    glm::mat4 leftEye_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.25f, 0.05f, 0.15f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 0.4f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
+    Node *leftEye_node = new Node(leftEye_mat);
+
+    leftEye_node->add(leftEye);
+
+    Shape *rightEar = new Triangle(color_shader);
+
+    glm::mat4 rightEar_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.35f, 0.45f, 0.4f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.35f, 0.35f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(80.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+
+    Node *rightEar_node = new Node(rightEar_mat);
+
+    rightEar_node->add(rightEar);
+
+    Shape *leftEar = new Triangle(color_shader);
+
+    glm::mat4 leftEar_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.35f, 0.45f, 0.4f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.35f, 0.35f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(-80.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+
+    Node *leftEar_node = new Node(leftEar_mat);
+
+    leftEar_node->add(leftEar);
+
+    Shape *rightuArm = new Cylinder(color_shader);
+
+    glm::mat4 rightuArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.12f, 0.6f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.25f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(5.0f), glm::vec3(1.0f, -0.1f, 0.0f));
+
+    Node *rightuArm_node = new Node(rightuArm_mat);
+
+    rightuArm_node->add(rightuArm);
+
+    Shape *rightlArm = new Cylinder(color_shader);
+
+    glm::mat4 rightlArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.975f, 0.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.9f, 1.f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(-1.0f), glm::vec3(1.0f, -0.1f, 0.0f));
+
+    Node *rightlArm_node = new Node(rightlArm_mat);
+
+    rightlArm_node->add(rightlArm);
+
+    Shape *leftuArm = new Cylinder(color_shader);
+
+    glm::mat4 leftuArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.12f, -0.6f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.25f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(5.0f), glm::vec3(-1.0f, -0.1f, 0.0f));
+
+    Node *leftuArm_node = new Node(leftuArm_mat);
+
+    leftuArm_node->add(leftuArm);
+
+    Shape *leftlArm = new Cylinder(color_shader);
+
+    glm::mat4 leftlArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.975f, 0.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.9f, 1.f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(-1.0f), glm::vec3(-1.0f, -0.1f, 0.0f));
+
+    Node *leftlArm_node = new Node(leftlArm_mat);
+
+    leftlArm_node->add(leftlArm);
+
+    Shape *rightuLeg = new Cylinder(color_shader);
+
+    glm::mat4 rightuLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.8f, 0.3f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.4f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(-0.1f, 1.0f, 0.0f));
+
+    Node *rightuLeg_node = new Node(rightuLeg_mat);
+
+    rightuLeg_node->add(rightuLeg);
+
+    Shape *rightlLeg = new Cylinder(color_shader);
+
+    glm::mat4 rightlLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(1.f, 1.f, 1.f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    Node *rightlLeg_node = new Node(rightlLeg_mat);
+
+    rightlLeg_node->add(rightlLeg);
+
+    Shape *leftuLeg = new Cylinder(color_shader);
+
+    glm::mat4 leftuLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.8f, -0.3f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.4f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(0.1f, 1.0f, 0.0f));
+
+    Node *leftuLeg_node = new Node(leftuLeg_mat);
+
+    leftuLeg_node->add(leftuLeg);
+
+    Shape *leftlLeg = new Cylinder(color_shader);
+
+    glm::mat4 leftlLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f)) 
+        * glm::scale(glm::mat4(1.0f), glm::vec3(1.f, 1.f, 1.f)) 
+        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    Node *leftlLeg_node = new Node(leftlLeg_mat);
+
+    leftlLeg_node->add(leftlLeg);
+    body_node->add(head_node);
+    head_node->add(rightEye_node);
+    head_node->add(leftEye_node);
+    head_node->add(rightEar_node);
+    head_node->add(leftEar_node);
+    body_node->add(rightuArm_node);
+    rightuArm_node->add(rightlArm_node);
+    body_node->add(leftuArm_node);
+    leftuArm_node->add(leftlArm_node);
+    body_node->add(rightuLeg_node);
+    rightuLeg_node->add(rightlLeg_node);
+    body_node->add(leftuLeg_node);
+    leftuLeg_node->add(leftlLeg_node);
+    human->add(body_node);
+
+    viewer.scene_root->add(human);
 
     viewer.run();
 }

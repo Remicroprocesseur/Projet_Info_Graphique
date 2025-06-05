@@ -28,6 +28,16 @@ void Node::draw(glm::mat4& model, glm::mat4& view, glm::mat4& projection) {
     }
 }
 
+std::vector<Node *> Node::getchildren()
+{
+    return children_;
+}
+
+void Node::movement(glm::mat4 mov)
+{
+    transform_ = mov * transform_;
+}
+
 void Node::key_handler(int key) const {
     for (const auto& child : children_) {
             child->key_handler(key);
