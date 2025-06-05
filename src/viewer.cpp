@@ -81,11 +81,17 @@ void Viewer::run()
     int trajectory_number = 1;
     bool trajectory_return = false;
 
-    float speed = 0.001;
-
+    float lastTime = glfwGetTime();
     // Main render loop for this OpenGL window
     while (!glfwWindowShouldClose(win))
     {
+        
+        float currentTime = glfwGetTime();
+        float deltaTime = currentTime - lastTime;
+        lastTime = currentTime;
+    
+        float speed = 0.001;
+
 
         // clear draw buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -101,15 +107,16 @@ void Viewer::run()
         {
             if(!trajectory_return)
             {
-                if(current_z<=12.0f)
+                if(current_z<12.0f)
                 {
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.001f));
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, speed));
                     human->movement(model_human);
                     current_z+=speed;
+                    //printf("etape 1 : z = %f\n", current_z);
                 }
                 else
                 {
-                    if(current_x>=-13.0f)
+                    if(current_x>-13.0f)
                     {
                         
                         if(human_rot>-90.0f) //On fait rotater le personnage de 90° sur la droite si cela n'a pas déjà été fait
@@ -122,9 +129,10 @@ void Viewer::run()
                             human_rot = human_rot - 90.0f;
                         }
                         
-                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-0.001f, 0.0f, 0.0f)) * model_human;
+                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-speed, 0.0f, 0.0f)) * model_human;
                         human->movement(model_human);
                         current_x-=speed;
+                        
                     }
                     else
                     {
@@ -147,7 +155,7 @@ void Viewer::run()
                         human_rot += 180.0f;
                     }
 
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.001f, 0.0f, 0.0f)) * model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(speed, 0.0f, 0.0f)) * model_human;
                     human->movement(model_human);
                     current_x+=speed;
                 }
@@ -166,7 +174,7 @@ void Viewer::run()
                             human_rot += 90.0f;
                         }
 
-                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.001f))* model_human;
+                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -speed))* model_human;
                         human->movement(model_human);
                         current_z-=speed;
                     }
@@ -186,7 +194,7 @@ void Viewer::run()
             {
                 if(current_z>-2)
                 {
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.001f));
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -speed));
                     human->movement(model_human);
                     current_z-=speed;
                 }
@@ -204,7 +212,7 @@ void Viewer::run()
                             human_rot += 90.0f;
                         }
 
-                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-0.001f, 0.0f, 0.0f))* model_human;
+                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-speed, 0.0f, 0.0f))* model_human;
                         human->movement(model_human);
                         current_x-=speed;
                     }
@@ -221,7 +229,7 @@ void Viewer::run()
                                     * transl_origin1;
                                 human_rot -= 90.0f;
                             }
-                            model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.001f))* model_human;
+                            model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -speed))* model_human;
                             human->movement(model_human);
                             current_z-=speed;
                             
@@ -246,7 +254,7 @@ void Viewer::run()
                             * transl_origin1;
                         human_rot += 90.0f;
                     }
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.001f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, speed))* model_human;
                     human->movement(model_human);
                     current_z+=speed;
                 }
@@ -263,7 +271,7 @@ void Viewer::run()
                                 * transl_origin1;
                             human_rot += 90.0f;
                         }
-                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.001f, 0.0f, 0.0f))* model_human;
+                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(speed, 0.0f, 0.0f))* model_human;
                         human->movement(model_human);
                         current_x+=speed;
                     }
@@ -280,7 +288,7 @@ void Viewer::run()
                                     * transl_origin1;
                                 human_rot -= 90.0f;
                             }
-                            model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.001f))* model_human;
+                            model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, speed))* model_human;
                             human->movement(model_human);
                             current_z+=speed;
                         }
@@ -311,7 +319,7 @@ void Viewer::run()
                         human_rot -= 90.0f;
                     }
 
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.001f, 0.0f, 0.0f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(speed, 0.0f, 0.0f))* model_human;
                     human->movement(model_human);
                     current_x+=speed;
                 }
@@ -333,7 +341,7 @@ void Viewer::run()
                             * transl_origin1;
                         human_rot -= 180.0f;
                     }
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-0.001f, 0.0f, 0.0f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-speed, 0.0f, 0.0f))* model_human;
                     human->movement(model_human);
                     current_x-=speed;
                 }
@@ -360,7 +368,7 @@ void Viewer::run()
                             * transl_origin1;
                         human_rot += 180.0f;
                     }
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.001f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -speed))* model_human;
                     human->movement(model_human);
                     current_z-=speed;
                 }
@@ -377,7 +385,7 @@ void Viewer::run()
                                 * transl_origin1;
                             human_rot -= 90.0f;
                         }
-                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.001f, 0.0f, 0.0f))* model_human;
+                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(speed, 0.0f, 0.0f))* model_human;
                         human->movement(model_human);
                         current_x+=speed;
                     }
@@ -400,7 +408,7 @@ void Viewer::run()
                             * transl_origin1;
                         human_rot += 90.0f;
                     }
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-0.001f, 0.0f, 0.0f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(-speed, 0.0f, 0.0f))* model_human;
                     human->movement(model_human);
                     current_x-=speed;
                 }
@@ -417,7 +425,7 @@ void Viewer::run()
                                 * transl_origin1;
                             human_rot += 90.0f;
                         }
-                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.001f))* model_human;
+                        model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, speed))* model_human;
                         human->movement(model_human);
                         current_z+=speed;
                     }
@@ -446,7 +454,7 @@ void Viewer::run()
                             * transl_origin1;
                         human_rot -= 90.0f;
                     }
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.001f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, speed))* model_human;
                     human->movement(model_human);
                     current_z+=speed;
                 }
@@ -468,7 +476,7 @@ void Viewer::run()
                             * transl_origin1;
                         human_rot -= 180.0f;
                     }
-                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -0.001f))* model_human;
+                    model_human = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -speed))* model_human;
                     human->movement(model_human);
                     current_z-=speed;
                 }
