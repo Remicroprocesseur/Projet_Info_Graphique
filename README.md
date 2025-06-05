@@ -1,6 +1,6 @@
 # Code OpenGL using C++
 
-This is the code of our project.
+Please find the code of our project on the branch named "final".
 
 # Installation
 
