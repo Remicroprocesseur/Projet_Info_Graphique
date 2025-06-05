@@ -71,6 +71,10 @@ Viewer::Viewer(int width, int height)
 
 void Viewer::run()
 {
+    //human parts
+    Node* human = this->scene_root->getchildren()[1];
+
+    //human state
     float human_rot = 0.0f;
     float current_x = 0.0f;
     float current_z = 0.0f;
@@ -86,7 +90,6 @@ void Viewer::run()
 
         /*character's movement*/
 
-        Node* human = this->scene_root->getchildren()[1];
         glm::mat4 model_human = glm::mat4(1.0f);
 
         //trajectory definition
@@ -131,7 +134,7 @@ void Viewer::run()
             {
                 if(current_x<0.0f)
                 {
-                    /*rajouter une rotation de 180° au bonhomme*/                   
+                    //rajouter une rotation de 180° au bonhomme                 
                     if(human_rot<90.0f)
                     {
                         glm::mat4 transl_origin1 = glm::translate(glm::mat4(1.0f), glm::vec3(-current_x, 0.0f + 1.0f, -current_z + 4.0f));
@@ -150,7 +153,7 @@ void Viewer::run()
                 {
                     if(current_z>0.0f)
                     {
-                        /*Rajouter une rotation de 90° au bonhomme */
+                        //Rajouter une rotation de 90° au bonhomme 
                         if(human_rot<180.0f)
                         {
                             glm::mat4 transl_origin1 = glm::translate(glm::mat4(1.0f), glm::vec3(-current_x, 0.0f + 1.0f, -current_z + 4.0f));
@@ -230,7 +233,6 @@ void Viewer::run()
             }
             else
             {
-                /*A faire après trajet 3*/
                 if(current_z<-2)
                 {
                     if(human_rot<0)
