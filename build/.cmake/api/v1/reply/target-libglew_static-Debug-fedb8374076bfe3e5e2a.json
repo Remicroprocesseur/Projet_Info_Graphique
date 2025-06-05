@@ -57,13 +57,13 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 38,
+				"line" : 39,
 				"parent" : 5
 			},
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 41,
+				"line" : 42,
 				"parent" : 5
 			},
 			{
@@ -113,42 +113,30 @@
 				},
 				{
 					"backtrace" : 6,
-					"define" : "SHADER_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/shaders/\""
+					"define" : "SHADER_DIR=\"/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/shaders/\""
 				},
 				{
 					"backtrace" : 7,
-					"define" : "TEXTURE_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/textures/\""
-				},
-				{
-					"backtrace" : 3,
-					"define" : "VC_EXTRALEAN"
-				},
-				{
-					"backtrace" : 3,
-					"define" : "WIN32_MEAN_AND_LEAN"
-				},
-				{
-					"backtrace" : 3,
-					"define" : "_CRT_SECURE_NO_WARNINGS"
+					"define" : "TEXTURE_DIR=\"/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/textures/\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/include"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glew-cmake/include"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glfw/include"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/external/glfw/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glm"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/external/glm"
 				}
 			],
 			"language" : "C",
@@ -170,7 +158,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/OpenGLProgram"
+			"path" : "/usr/local"
 		}
 	},
 	"name" : "libglew_static",

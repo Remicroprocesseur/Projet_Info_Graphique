@@ -2,13 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "external/glew-cmake/bin/libglew-sharedd.dll"
-		},
-		{
-			"path" : "external/glew-cmake/lib/libglew-sharedd.dll.a"
-		},
-		{
-			"path" : "external/glew-cmake/bin/libglew-sharedd.pdb"
+			"path" : "external/glew-cmake/lib/libglew-sharedd.so"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +12,6 @@
 		[
 			"add_library",
 			"install",
-			"target_link_options",
 			"target_link_libraries",
 			"target_compile_definitions",
 			"add_compile_definitions",
@@ -49,23 +42,17 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 231,
+				"line" : 242,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 242,
-				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
 				"line" : 228,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 3,
 				"file" : 0,
 				"line" : 240,
 				"parent" : 0
@@ -74,40 +61,40 @@
 				"file" : 1
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 1,
-				"line" : 38,
-				"parent" : 7
+				"line" : 39,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 42,
+				"parent" : 6
 			},
 			{
 				"command" : 5,
-				"file" : 1,
-				"line" : 41,
-				"parent" : 7
-			},
-			{
-				"command" : 6,
 				"file" : 1,
 				"line" : 14,
-				"parent" : 7
+				"parent" : 6
 			},
 			{
-				"command" : 6,
+				"command" : 5,
 				"file" : 1,
 				"line" : 15,
-				"parent" : 7
+				"parent" : 6
 			},
 			{
-				"command" : 6,
+				"command" : 5,
 				"file" : 1,
 				"line" : 16,
-				"parent" : 7
+				"parent" : 6
 			},
 			{
-				"command" : 6,
+				"command" : 5,
 				"file" : 1,
 				"line" : 17,
-				"parent" : 7
+				"parent" : 6
 			}
 		]
 	},
@@ -117,38 +104,26 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -fPIC"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"define" : "GLEW_BUILD"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"define" : "GLEW_NO_GLU"
 				},
 				{
+					"backtrace" : 7,
+					"define" : "SHADER_DIR=\"/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/shaders/\""
+				},
+				{
 					"backtrace" : 8,
-					"define" : "SHADER_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/shaders/\""
-				},
-				{
-					"backtrace" : 9,
-					"define" : "TEXTURE_DIR=\"C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/textures/\""
-				},
-				{
-					"backtrace" : 6,
-					"define" : "VC_EXTRALEAN"
-				},
-				{
-					"backtrace" : 6,
-					"define" : "WIN32_MEAN_AND_LEAN"
-				},
-				{
-					"backtrace" : 6,
-					"define" : "_CRT_SECURE_NO_WARNINGS"
+					"define" : "TEXTURE_DIR=\"/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/textures/\""
 				},
 				{
 					"define" : "libglew_shared_EXPORTS"
@@ -157,20 +132,20 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 9,
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/include"
+				},
+				{
 					"backtrace" : 10,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/include"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glew-cmake/include"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/external/glfw/include"
 				},
 				{
 					"backtrace" : 12,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glfw/include"
-				},
-				{
-					"backtrace" : 13,
-					"path" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glm"
+					"path" : "/home/Remi/Documents/Polytech/InfoGraphik/Projet_Info_Graphique/external/glm"
 				}
 			],
 			"language" : "C",
@@ -188,11 +163,15 @@
 			{
 				"backtrace" : 2,
 				"path" : "lib"
+			},
+			{
+				"backtrace" : 2,
+				"path" : "lib"
 			}
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/OpenGLProgram"
+			"path" : "/usr/local"
 		}
 	},
 	"link" : 
@@ -200,28 +179,40 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "",
-				"role" : "flags"
-			},
-			{
 				"backtrace" : 3,
-				"fragment" : "-nostdlib",
-				"role" : "flags"
-			},
-			{
-				"backtrace" : 4,
-				"fragment" : "-lopengl32",
+				"fragment" : "/usr/lib/libOpenGL.so",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libXext.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libX11.so",
 				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
 	"name" : "libglew_shared",
-	"nameOnDisk" : "libglew-sharedd.dll",
+	"nameOnDisk" : "libglew-sharedd.so",
 	"paths" : 
 	{
 		"build" : "external/glew-cmake",

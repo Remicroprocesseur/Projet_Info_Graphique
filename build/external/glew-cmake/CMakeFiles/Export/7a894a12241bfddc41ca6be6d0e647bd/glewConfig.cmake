@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.12")
    message(FATAL_ERROR "CMake >= 2.8.12 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.12...3.29)
+cmake_policy(VERSION 2.8.12...3.30)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -59,18 +59,18 @@ endif()
 add_library(libglew_static STATIC IMPORTED)
 
 set_target_properties(libglew_static PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "GLEW_STATIC;WIN32_MEAN_AND_LEAN;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;GLEW_NO_GLU"
+  INTERFACE_COMPILE_DEFINITIONS "GLEW_STATIC;GLEW_NO_GLU"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "OpenGL::GL"
+  INTERFACE_LINK_LIBRARIES "OpenGL::OpenGL;OpenGL::GLX;X11::X11;X11::Xext"
 )
 
 # Create imported target libglew_shared
 add_library(libglew_shared SHARED IMPORTED)
 
 set_target_properties(libglew_shared PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "WIN32_MEAN_AND_LEAN;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;GLEW_NO_GLU"
+  INTERFACE_COMPILE_DEFINITIONS "GLEW_NO_GLU"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "OpenGL::GL"
+  INTERFACE_LINK_LIBRARIES "OpenGL::OpenGL;OpenGL::GLX;X11::X11;X11::Xext"
 )
 
 # Load information for each installed configuration.

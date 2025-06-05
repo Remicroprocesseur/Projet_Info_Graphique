@@ -124,7 +124,7 @@ int main()
     Node *human = new Node(human_mat);
     // human -> add(new Cylinder(color_shader,2.0f,0.5f,100));
 
-    Shape *head = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape *head = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
 
     glm::mat4 head_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 1.0f, 0.0f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.5f)) 
@@ -134,7 +134,7 @@ int main()
 
     head_node->add(head);
 
-    Shape *body = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape *body = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
     glm::mat4 body_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.5f, 0.0f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.35f, 2.0f, 0.5f)) 
@@ -144,7 +144,7 @@ int main()
 
     body_node->add(body);
 
-    Shape *rightEye = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape *rightEye = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
     glm::mat4 rightEye_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.25f, 0.05f, 0.15f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 0.4f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
@@ -152,7 +152,7 @@ int main()
 
     rightEye_node->add(rightEye);
 
-    Shape *leftEye = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape *leftEye = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
 
     glm::mat4 leftEye_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.25f, 0.05f, 0.15f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 0.4f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
@@ -176,7 +176,7 @@ int main()
 
     leftEar_node->add(leftEar);
 
-    Shape *rightuArm = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape *rightuArm = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
 
     glm::mat4 rightuArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.12f, 0.6f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.25f)) 
@@ -186,7 +186,7 @@ int main()
 
     rightuArm_node->add(rightuArm);
 
-    Shape *leftuArm = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape *leftuArm = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
 
     glm::mat4 leftuArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.12f, -0.6f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.25f)) 
