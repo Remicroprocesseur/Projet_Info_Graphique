@@ -32,6 +32,7 @@ set(SOURCES
     ${SRC_DIR}/textured_sphere.cpp
     ${SRC_DIR}/lighting_sphere.cpp
     ${SRC_DIR}/cube.cpp
+    ${SRC_DIR}/lighting_cylinder.cpp
 )
 
 # Define Shader director

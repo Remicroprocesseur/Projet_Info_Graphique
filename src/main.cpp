@@ -10,11 +10,7 @@
 #include <stdlib.h>
 #include "cylinder.h"
 #include "triangle.h"
-/**#include <assimp/Importer.hpp>
-#include <assimp/scene.h>
-#include <assimp/postprocess.h>
-ça fait des erreurs sur mon pc
-**/
+#include "lighting_cylinder.h"
 
 #ifndef SHADER_DIR
 #error "SHADER_DIR not defined"
@@ -37,7 +33,7 @@ int main()
 
     Shader* texture_shader = new Shader(shader_dir + "texture.vert", shader_dir + "texture.frag");
 
-    Texture *texture = new Texture(texture_dir + "texture1.png");
+    Texture *texture = new Texture(texture_dir + "Wood.jpg");
 
     Shape* cube1 = new TexturedCube(texture_shader, texture);
     glm::mat4 cube1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
@@ -115,20 +111,10 @@ int main()
     cube1_node->add(wall7_node);
     
     viewer.scene_root->add(cube1_node);
-
-
-    //viewer.scene_root->add(sphere1_node);
     
     Shader *phong_shader = new Shader(shader_dir + "phong.vert", shader_dir + "phong.frag");
 
     Shader *color_shader = new Shader(shader_dir + "node.vert", shader_dir + "node.frag");
-
-    /**Shape* sphere2 = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-    glm::mat4 sphere2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    
-    Node* sphere2_node = new Node(sphere2_mat);**/
 
     //création du bonhomme à animer
     glm::mat4 human_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, -4.0f)) 
@@ -138,7 +124,7 @@ int main()
     Node *human = new Node(human_mat);
     // human -> add(new Cylinder(color_shader,2.0f,0.5f,100));
 
-    Shape *head = new Cylinder(color_shader);
+    Shape *head = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 head_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 1.0f, 0.0f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.5f)) 
@@ -148,7 +134,7 @@ int main()
 
     head_node->add(head);
 
-    Shape *body = new Cylinder(color_shader);
+    Shape *body = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 body_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.5f, 0.0f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.35f, 2.0f, 0.5f)) 
@@ -158,7 +144,7 @@ int main()
 
     body_node->add(body);
 
-    Shape *rightEye = new Cylinder(color_shader);
+    Shape *rightEye = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rightEye_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.25f, 0.05f, 0.15f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 0.4f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
@@ -166,7 +152,7 @@ int main()
 
     rightEye_node->add(rightEye);
 
-    Shape *leftEye = new Cylinder(color_shader);
+    Shape *leftEye = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 leftEye_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-0.25f, 0.05f, 0.15f)) * glm::scale(glm::mat4(1.0f), glm::vec3(0.2f, 0.4f, 1.0f)) * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
@@ -190,7 +176,7 @@ int main()
 
     leftEar_node->add(leftEar);
 
-    Shape *rightuArm = new Cylinder(color_shader);
+    Shape *rightuArm = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rightuArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.12f, 0.6f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.25f)) 
@@ -200,17 +186,7 @@ int main()
 
     rightuArm_node->add(rightuArm);
 
-    Shape *rightlArm = new Cylinder(color_shader);
-
-    glm::mat4 rightlArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.975f, 0.0f)) 
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.9f, 1.f)) 
-        * glm::rotate(glm::mat4(1.0f), glm::radians(-1.0f), glm::vec3(1.0f, -0.1f, 0.0f));
-
-    Node *rightlArm_node = new Node(rightlArm_mat);
-
-    rightlArm_node->add(rightlArm);
-
-    Shape *leftuArm = new Cylinder(color_shader);
+    Shape *leftuArm = new LightingCylinder(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 leftuArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.12f, -0.6f)) 
         * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.25f)) 
@@ -220,68 +196,13 @@ int main()
 
     leftuArm_node->add(leftuArm);
 
-    Shape *leftlArm = new Cylinder(color_shader);
-
-    glm::mat4 leftlArm_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.975f, 0.0f)) 
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.9f, 1.f)) 
-        * glm::rotate(glm::mat4(1.0f), glm::radians(-1.0f), glm::vec3(-1.0f, -0.1f, 0.0f));
-
-    Node *leftlArm_node = new Node(leftlArm_mat);
-
-    leftlArm_node->add(leftlArm);
-
-    Shape *rightuLeg = new Cylinder(color_shader);
-
-    glm::mat4 rightuLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.8f, 0.3f)) 
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.4f)) 
-        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(-0.1f, 1.0f, 0.0f));
-
-    Node *rightuLeg_node = new Node(rightuLeg_mat);
-
-    rightuLeg_node->add(rightuLeg);
-
-    Shape *rightlLeg = new Cylinder(color_shader);
-
-    glm::mat4 rightlLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f)) 
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.f, 1.f, 1.f)) 
-        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-
-    Node *rightlLeg_node = new Node(rightlLeg_mat);
-
-    rightlLeg_node->add(rightlLeg);
-
-    Shape *leftuLeg = new Cylinder(color_shader);
-
-    glm::mat4 leftuLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -0.8f, -0.3f)) 
-        * glm::scale(glm::mat4(1.0f), glm::vec3(0.5f, 0.7f, 0.4f)) 
-        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(0.1f, 1.0f, 0.0f));
-
-    Node *leftuLeg_node = new Node(leftuLeg_mat);
-
-    leftuLeg_node->add(leftuLeg);
-
-    Shape *leftlLeg = new Cylinder(color_shader);
-
-    glm::mat4 leftlLeg_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f)) 
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.f, 1.f, 1.f)) 
-        * glm::rotate(glm::mat4(1.0f), glm::radians(1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-
-    Node *leftlLeg_node = new Node(leftlLeg_mat);
-
-    leftlLeg_node->add(leftlLeg);
     body_node->add(head_node);
     head_node->add(rightEye_node);
     head_node->add(leftEye_node);
     head_node->add(rightEar_node);
     head_node->add(leftEar_node);
     body_node->add(rightuArm_node);
-    rightuArm_node->add(rightlArm_node);
     body_node->add(leftuArm_node);
-    leftuArm_node->add(leftlArm_node);
-    body_node->add(rightuLeg_node);
-    rightuLeg_node->add(rightlLeg_node);
-    body_node->add(leftuLeg_node);
-    leftuLeg_node->add(leftlLeg_node);
     human->add(body_node);
 
     viewer.scene_root->add(human);
