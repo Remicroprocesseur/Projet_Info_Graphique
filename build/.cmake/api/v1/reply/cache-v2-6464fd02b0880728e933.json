@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/addr2line.exe"
+			"value" : "C:/msys64/mingw64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/ar.exe"
+			"value" : "C:/msys64/mingw64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -51,7 +51,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/cmake-build-debug"
+			"value" : "c:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "31"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -103,15 +103,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
-			"name" : "CMAKE_COLOR_DIAGNOSTICS",
+			"name" : "CMAKE_COLOR_MAKEFILE",
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "Enable colored diagnostics throughout."
+					"value" : "Enable/Disable color output during build."
 				}
 			],
 			"type" : "BOOL",
@@ -127,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "C:/Program Files/CMake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -139,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "C:/Program Files/CMake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -151,7 +155,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "C:/Program Files/CMake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -166,8 +170,8 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/g++.exe"
+			"type" : "STRING",
+			"value" : "C:/msys64/mingw64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -183,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -199,7 +203,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -310,8 +314,8 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe"
+			"type" : "STRING",
+			"value" : "C:/msys64/mingw64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -327,7 +331,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -343,7 +347,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe"
+			"value" : "C:/msys64/mingw64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -455,7 +459,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/dlltool.exe"
+			"value" : "C:/msys64/mingw64/bin/dlltool.exe"
+		},
+		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "C:/Program Files/CMake/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -554,16 +570,12 @@
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
-					"value" : "Enable/Disable output of compile commands during generation."
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "BOOL",
-			"value" : ""
+			"value" : "TRUE"
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -587,7 +599,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -599,7 +611,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "MinGW Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -671,7 +683,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -955,19 +967,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/ld.exe"
+			"value" : "C:/msys64/mingw64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/mingw64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1063,7 +1079,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/nm.exe"
+			"value" : "C:/msys64/mingw64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -1091,7 +1107,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/objcopy.exe"
+			"value" : "C:/msys64/mingw64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -1107,7 +1123,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe"
+			"value" : "C:/msys64/mingw64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1231,7 +1247,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe"
+			"value" : "C:/msys64/mingw64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1247,7 +1263,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/windres.exe"
+			"value" : "C:/msys64/mingw64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1355,7 +1371,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/readelf.exe"
+			"value" : "C:/msys64/mingw64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1367,7 +1383,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.30"
+			"value" : "C:/Program Files/CMake/share/cmake-3.31"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1575,7 +1591,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/cloth/AppData/Local/Programs/CLion/bin/mingw/bin/strip.exe"
+			"value" : "C:/msys64/mingw64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1683,7 +1699,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/cmake-build-debug/external/glfw"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1803,7 +1819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/external/glfw"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glfw"
 		},
 		{
 			"name" : "GLFW_USE_HYBRID_HPG",
@@ -1871,7 +1887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/cmake-build-debug"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build"
 		},
 		{
 			"name" : "OpenGLProgram_IS_TOP_LEVEL",
@@ -1895,7 +1911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom"
 		},
 		{
 			"name" : "PKG_CONFIG_REPRESENTATIVE_TARGET",
@@ -1932,6 +1948,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "1"
+		},
+		{
+			"name" : "_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1991,7 +2031,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/cmake-build-debug/external/glew-cmake"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glew-cmake"
 		},
 		{
 			"name" : "glew_IS_TOP_LEVEL",
@@ -2015,7 +2055,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/external/glew-cmake"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glew-cmake"
 		},
 		{
 			"name" : "glm_BINARY_DIR",
@@ -2027,7 +2067,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/cmake-build-debug/external/glm"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/build/external/glm"
 		},
 		{
 			"name" : "glm_IS_TOP_LEVEL",
@@ -2051,7 +2091,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/cloth/Desktop/Cours/Polytech/ET3/S6/ComputerGraphics/project-master/project/external/glm"
+			"value" : "C:/Users/ambre/OneDrive/Documents/etudeSup/ET3IIM/informatique graphique/backroom/external/glm"
 		}
 	],
 	"kind" : "cache",
